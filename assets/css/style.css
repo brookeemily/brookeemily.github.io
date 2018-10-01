@@ -1,0 +1,118 @@
+body {
+  background-color: #0b0c10;
+  background-color: #181818;
+  background-color: whitesmoke;
+
+
+}
+
+#content {
+  background-image: url("../../images/brvvke-5.png");
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  margin-left: 17%;
+}
+
+
+#title {
+  text-align: right;
+  margin-bottom: 0px;
+  color: #44318d;
+  font-family: "Quattrocento+Sans", sans-serif;
+  line-height: 0.8;
+  padding-top: 3%;
+}
+
+
+#menuIcon {
+  float: left;
+  margin-left:16%;
+  margin-top: 5%;
+}
+
+.btn {  
+  height: 75px !important;
+  width: 500px !important;
+}
+
+/* #overflow {
+  overflow: visible;
+} */
+
+#sidebarBtn {
+  font-size: 100px !important;
+  margin-top: 18.75px;
+  margin-right: 375px;
+  color: white;
+}
+
+#sidebarBtnClose {
+  font-size: 100px !important;
+  margin-top: 18.75px;
+  margin-right: 375px;
+  color: white;
+}
+
+#menuIcon:hover{
+  cursor: pointer;
+}
+
+
+#mainMenu{
+  background-color: #3e2d80;
+  height: 100vh;
+  width: 300px;
+  position: fixed;
+  top:0;
+  left: -300px;
+  transition: all .5s ease-in-out;
+  text-decoration: none;
+
+}
+ul{
+
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  font-family: arial;
+  color:white;
+  text-align: center;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+ul li{
+  margin: 20px;
+  text-decoration: none !important;
+
+}
+ul li:hover{
+  cursor: pointer;
+  text-decoration: none !important;
+
+}
+.line{
+  height: 2px;
+  width: 150px;
+  background-color: white;
+  margin-top: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  transition: all .3s;
+}
+ul li:hover .line{
+
+  width: 180px;
+}
+
+
+
+
+.link:any-link {
+  text-decoration: none !important;
+  color: white;
+}
+
