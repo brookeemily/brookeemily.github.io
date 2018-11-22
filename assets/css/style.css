@@ -1,102 +1,143 @@
 body {
-  background-color: #0b0c10;
-  background-color: #181818;
-  background-color: whitesmoke;
+  /* background: white; */
+  font-family: 'Poppins', sans-serif !important;
+  background-color: rgb(27, 4, 34);
 
+}
+
+.border-dark {
+  border-color: rgb(27, 4, 34) !important;
 
 }
 
 #content {
-  background-image: url("../../images/brvvke-5.png");
-  height: 800px;
+  background-image: url("../../images/transparent-img-shadow.png");
+  /* background-blend-mode: screen; */
+  background-color: rgb(27, 4, 34);
+  /* height:100vh; */
+  max-height: 1500px;
+  width: 100vw;
   background-repeat: no-repeat;
-  background-position-x: 50%;
-  margin-left: 17%;
+  background-size: 40%;
+  background-position: right;
+  margin: 0px;
 }
 
+/* #content::after {
+  background-color: black;
+
+} */
 
 #title {
-  text-align: right;
+  /* text-align: center; */
   margin-bottom: 0px;
-  color: #44318d;
+  color: rgb(216, 214, 214);
   font-family: "Quattrocento+Sans", sans-serif;
+  font-family: 'Poppins', sans-serif !important;
   line-height: 0.8;
-  padding-top: 3%;
-}
-
-
-#menuIcon {
-  float: left;
-  margin-left:16%;
+  /* padding-top: 3%; */
   margin-top: 5%;
 }
 
-.btn {  
-  height: 75px !important;
-  width: 500px !important;
+.link {
+  text-decoration: none !important;
+  color: rgb(207, 190, 190);
 }
 
-/* #overflow {
-  overflow: visible;
-} */
-
-#sidebarBtn {
-  font-size: 100px !important;
-  margin-top: 18.75px;
-  margin-right: 375px;
+.link:hover {
   color: white;
 }
 
-#sidebarBtnClose {
-  font-size: 100px !important;
-  margin-top: 18.75px;
-  margin-right: 375px;
+
+.textbox {
+  /* margin-left: 10%;
+  margin-top: 10%; */
+  text-align: center;
+  /* max-width: 750px; */
+  background-color: rgba(12, 1, 17, 0.3);
+  height:100vh;
+  width: 100vw;
+}
+.textboxcontent:hover {
+  background-color: rgba(34, 33, 33, 0.4);
+}
+
+.textboxcontent {
+  background-color: rgba(12, 1, 17, 0.3);
+  max-width: 600px;
+/* margin-left: 20%; */
+margin: auto;
+margin-top: 20%;
+margin-left: 20%;
+color: rgb(207, 190, 190);
+
+}
+
+
+.jumbotron {
+  padding: 0px !important;
+
+}
+
+.fa:hover {
   color: white;
 }
 
-#menuIcon:hover{
-  cursor: pointer;
+.fa-bars, .fa-close {
+    color: rgb(207, 190, 190);
+  }
+
+
+/* MENU */
+#MenuIcon{
+  float: right;
+  width: 100vw;
+  margin-right: 2%;
+  margin-top: 2%;
 }
 
-
-#mainMenu{
-  background-color: #3e2d80;
+#MainMenu{
   height: 100vh;
   width: 300px;
+  /* background-color: rgb(27, 4, 34);
+  background-color: rgb(39, 24, 44);
+  background-color: rgb(16, 3, 24); */
+background-color: rgb(11, 3, 21);
+  -webkit-clip-path:polygon(0 0,100% 0,0% 100%,0% 100%);
   position: fixed;
   top:0;
   left: -300px;
   transition: all .5s ease-in-out;
-  text-decoration: none;
+}
+
+.MainMenuIndexNeedstoBeDarker {
+  background-color: rgb(7, 3, 21) !important;
 
 }
 ul{
-
   list-style: none;
   padding: 0px;
   margin: 0px;
   font-family: arial;
-  color:white;
+  color: rgb(207, 190, 190);
   text-align: center;
   position: absolute;
   top:50%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
+
 ul li{
   margin: 20px;
-  text-decoration: none !important;
 
 }
 ul li:hover{
   cursor: pointer;
-  text-decoration: none !important;
-
 }
 .line{
   height: 2px;
   width: 150px;
-  background-color: white;
+  background-color: rgb(207, 190, 190);
   margin-top: 10px;
   position: absolute;
   left: 50%;
@@ -104,15 +145,63 @@ ul li:hover{
   transition: all .3s;
 }
 ul li:hover .line{
-
   width: 180px;
 }
-
-
-
-
-.link:any-link {
-  text-decoration: none !important;
-  color: white;
+#logo{
+  position: absolute;
+  top:100;
+  left: 50%;
+  transform: translate(-50%);
+}
+#close{
+  position: absolute;
+  bottom: 150;
+  left: 50%;
+  transform: translate(-50%);
+}
+#close:hover{
+  cursor: pointer;
 }
 
+#aboutMeContent {
+  margin: auto;
+  color: white;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+#bioImg {
+max-width: 525px;
+max-height: 700px;
+}
+
+#textAboutMe {
+  margin-right: 0px;
+  color: rgb(207, 190, 190);
+}
+
+.aboutTitle {
+  color: rgb(216, 214, 214);
+
+}
+
+.btn-outline-light:hover {
+  background-color: rgba(30, 22, 52, 0.867) !important;
+  cursor: pointer;
+
+}
+
+.btn-outline-light:active {
+  background-color: rgba(34, 33, 33, 0.7) !important;
+  cursor: pointer;
+
+}
+
+
+
+@media (min-width: 576px){
+.card-columns {
+  column-count: 2 !important;
+}
+}

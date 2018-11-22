@@ -5,58 +5,75 @@
 
     <meta charset="UTF-8">
     <title>Brooke Emily Mitchell</title>
+   
+      <style>
+            @import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans|Poppins');
+            </style>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+    <!--Import Google Icon Font-->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <!-- Importa Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Import materialize.css
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize/css/materialize.min.css"  media="screen,projection"/>
+     -->
     <!-- Link style sheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Shrikhand|Quattrocento+Sans');
-    </style>
-
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="assets/css/materialize/css/materialize.min.css"  media="screen,projection"/>
-
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
 <body>
     
+    
+    
     <!-- SIDEBAR -->
-
-    <div id="menuIcon">
-            <!-- <div id="menuLine"></div> -->
-            <a class="btn waves-effect waves-purple iconBtn" id="overflow"><i class="material-icons" id="sidebarBtn">chevron_right</i></a>
-            <a class="btn waves-effect waves-purple iconBtnClose" id="overflow"><i class="material-icons" id="sidebarBtnClose">chevron_left</i></a>
-        </div>
-        <!-- <div id="close">
+    <div id="sidebar">
+    <h1 class="float-right text-right" id="MenuIcon">
+            <i class="fa fa-bars" id="menuButton"></i>
+            <i class="fa fa-close" id="closeButton"></i>
+        </h1>
+        <div class="MainMenuIndexNeedstoBeDarker" id="MainMenu">
+            <!-- <div id="logo">
+                Brooke Mitchell
             </div> -->
-   
-        <div id="mainMenu">
             <ul>
-                <li><a class="link" href="index.html">HOME</a><div class="line"></div></li>
-                <li><a class="link" href="portfolio.html">PORTFOLIO</a><div class="line"></div></li>
-                <li><a class="link" href="about.html">ABOUT</a><div class="line"></div></li>
+                    <li><a class="link" href="index.html">HOME</a><div class="line"></div></li>
+                    <li><a class="link" href="portfolio.html">PORTFOLIO</a><div class="line"></div></li>
+                    <li><a class="link" href="about.html">ABOUT</a><div class="line"></div></li>
             </ul>
         </div>
-
-    <div class="container" id="content">
-                            <h1 class="display-1" id="title">Brooke <br> Mitchell</h1>
-
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <div class="jumbotron jumbotron-fluid" id="content">
+        <div class="border border-dark textbox">
+            
+                        <div class="border border-secondary textboxcontent">
+                        <h1 class="display-4" id="title">Brooke Mitchell</h1>
+                        <hr style="width: 75%; color: rgb(103, 103, 103); height: 0px; background-color:rgb(103, 103, 103);" />
+                        <h1>
+                            <a href="https://linkedin.com/in/brooke-e-mitchell"  target="_blank"  class="link fa fa-linkedin-square"></a>
+                        <a href="https://github.com/brookeemily"  target="_blank"  class="link fa fa-github"></a>
+                        <a href="mailto:brooke.mitchell@comcast.net"  class="link fa fa-envelope"></a>
+                    </h1>
+                        <p id="bio">Full Stack Developer &amp; Digital Designer
+                            <br> King of Prussia, PA
+                        </p>
+                        </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/css/materialize/js/materialize.min.js"></script>
-    <script type="text/javascript" src="assets/javascript/app.js"> </script>
+           
+                    </div>
+                </div>
 
+
+
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                <script src="assets/javascript/app.js"></script>
 
 </body>
 
