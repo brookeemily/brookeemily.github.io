@@ -2,37 +2,31 @@ body {
   background-color: #0b0c10;
   background-color: #181818;
   background-color: whitesmoke;
-  background-image: linear-gradient(to bottom right, rgb(24, 9, 49), rgb(34, 5, 61));
-
 
 
 }
 
 #content {
-  background-image: url("../../images/transparent-img.png");
+  /* background-image: url("../../images/brvvke-5.png"); */
   height: 800px;
   background-repeat: no-repeat;
-  background-size: 35%;
-  background-position-x: 80%;
-  
+  background-position-x: 50%;
+  margin-top: 5%;
 }
 
 
-#title {
+#pageTitle {
   text-align: right;
-  margin-right: 32%;
-  margin-bottom: 0px;
+  margin-top: 0px;
   color: #44318d;
   font-family: "Quattrocento+Sans", sans-serif;
   line-height: 0.8;
-  padding-top: 3%;
 }
 
 
 #menuIcon {
   float: left;
-  margin-left:16%;
-  margin-top: 5%;
+ 
 }
 
 .btn {  
@@ -40,12 +34,10 @@ body {
   width: 500px !important;
 }
 
-/* #overflow {
-  overflow: visible;
-} */
+
 
 #sidebarBtn {
-  font-size: 100px !important;
+font-size: 100px !important;
   margin-top: 18.75px;
   margin-right: 375px;
   color: white;
@@ -62,14 +54,12 @@ body {
   cursor: pointer;
 }
 
-#menuIcon:click {
-  transform: rotateY(180deg);
-}
 
 #mainMenu{
   background-color: #3e2d80;
   height: 100vh;
   width: 300px;
+  /* -webkit-clip-path: polygon(0 0,100% 0,0% 100%,0% 100%); */
   position: fixed;
   top:0;
   left: -300px;
@@ -116,10 +106,34 @@ ul li:hover .line{
 }
 
 
-
-
 .link:any-link {
   text-decoration: none !important;
   color: white;
 }
 
+.pageHeader {
+  margin-left:16%;
+  margin-top: 8%;
+margin-right: 16%;}
+
+.bio {
+color: purple;
+}
+
+.timeline {
+  background-color: lightblue;
+}
+
+
+#links {
+  color: purple;
+}
+
+#connect {
+  margin-top: 0px;
+  background-color: #44318d;
+  width: 100%;
+  padding: 0px 50px;
+  padding-bottom: 25px;
+  color: white;
+}

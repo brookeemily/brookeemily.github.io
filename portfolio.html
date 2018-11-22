@@ -5,196 +5,244 @@
 
     <meta charset="UTF-8">
     <title>Brooke Emily Mitchell</title>
-   
-      <style>
-            @import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans|Poppins');
-            </style>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    
-    <!--Import Google Icon Font-->
-    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
-    <!-- Importa Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Link style sheet -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style-about.css">
 
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Shrikhand|Quattrocento+Sans');
+    </style>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize/css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
+<body>
 
-<div class="container-fluid">
-<body id="portfolio">
-            <div class="row">
-        <!-- SIDEBAR -->
-            <h1 class="float-right text-right" id="MenuIcon">
-            <i class="fa fa-bars" id="menuButton"></i>
-            <i class="fa fa-close" id="closeButton"></i>
-        </h1>
-        <div id="MainMenu">
-            <ul>
-                <li><a class="link" href="index.html">HOME</a><div class="line"></div></li>
-                <li><a class="link" href="portfolio.html">PORTFOLIO</a><div class="line"></div></li>
-                <li><a class="link" href="about.html">ABOUT</a><div class="line"></div></li>
-            </ul>
-        </div>
+    <div class="pageHeader">
+        <a class="btn waves-effect waves-purple iconBtn" id="menuIcon">
+            <i class="material-icons" id="sidebarBtn">chevron_right</i>
+        </a>
+        <a class="btn waves-effect waves-purple iconBtnClose" id="menuIcon">
+            <i class="material-icons" id="sidebarBtnClose">chevron_left</i>
+        </a>
+        <h1 class="display-1" id="pageTitle">Portfolio</h1>
     </div>
-</div>
+    <!-- SIDEBAR -->
 
-<div class="container mx-auto">
-    <div class="card-columns">
-            <div class="card">
-                    <img class="card-img-top" src="images/beer.png" alt="No Fear Beer image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">No Fear Beer</h5>
-                      <h6 class="card-text">September, 2018</h6>
-                      <p class="card-text">  
+    <div class="container" id="content">
+            <div class="row card-columns" id="portfolio">
+                    <div class="col s12 cards-container">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/bamazon.png">
+                            </div>
+                            <div class="card-content">
+                                <h5> Bamazon </h5>
+                                <h6>October, 2018</h6>
+                                <br>
+                                <p>
+                                    <b> Bamazon? Like Amazon?</b> Exactly like Amazon! Bamazon is a backend application that uses Javascript and MySQL to create an Amazon-like storefront application.
+                                    <br>
+                                    <br> Bamazon has three different programs: Bamazon Customer, Bamazon Manager, and Bamazon Supervisor. Each of these programs allows the user to interact with the Bamazon database in different ways.
+                                    <br>
+                                    <br> Please view the GitHub repository linked below to read the documentation and check out Bamazon.
+                            </div>
+                            <div class="card-action">
+                                <a id="links" target="_blank" href="https://github.com/brookeemily/bamazon-app">GitHub Repository</a>
+        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row"></div>
+                    <div class="col s12 cards-container">
+                            <div class="card">
+                            <div class="card-image">
+                                <img src="images/liri.jpg">
+                            </div>
+                            <div class="card-content">
+                                <h5> LIRI </h5>
+                                <h6>October, 2018</h6>
+                                <br>
+                                <p>
+                                    <b>Hey Liri? </b> LIRI is just like SIRI; however, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back data.
+                                    <br>
+                                    <br> Liri uses the Open Movie Database, Spotify, and BandsInTown APIs to return different information based on user input
+                                    <br>
+                                    <br> Please view the GitHub repository linked below to read the documentation and check out Liri!
+                            </div>
+                            <div class="card-action">
+                                <a id="links" target="_blank" href="https://github.com/brookeemily/liri-node-app">GitHub Repository</a>
+                            </div>
+                        </div>
+                    </div>
+        <div class="row card-columns" id="portfolio">
+            <div class="col s12 cards-container">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/beer.png">
+                    </div>
+                    <div class="card-content">
+                        <h5> NO FEAR BEER </h5>
+                        <h6>September, 2018</h6>
+                        <br>
+                        <p>
                             <b> Wanna grab a beer in Philly tonight? Make sure you use No Fear Beer first!</b> No Fear Beer is
                             an application that uses Google Places to find beer in your favorite Philly neighborhood. Once
                             you pick a place, we use OpenDataPhilly to show you the most recent crimes nearby - we always
                             want you to keep safety in mind when you're playing your big night out.
                             <br>
-                            <br> This project was created with Daland Dixon, Anders Engman, and Tim Fisher
+                            <br> This project was created by Daland Dixon, Anders Engman, Tim Fisher, and Brooke Mitchell - that's
+                            me!
                             <br>
                             <br> Working on this project was a pleasure and a huge learning experience. It was my first time
                             working with a team on a coding project so there were some growing pains (mostly GitHub pains
-                            at first). I got to work with three very talented people who I had never met before and we were able to reach our end goal of building a fun application
+                            at first), but overall it went extremely well. I got to work with three very talented people
+                            who I had never met before and we were able to reach our end goal of building a fun application
                             for class.
                             <br>
-                            <br>   
-                            
-                            <b>Technologies Used: </b> HTML, CSS, Bootstrap, JavaScript
-
+                            <br> I was the head of front end design for this project. I wrote the HTML for the application and
+                            used Bootstrap along with custom CSS to style the page. I also worked with Javascript and jQuery
+                            to create the sign out function.
                             <br>
-                            <br> Wanna give it a try? Create your own log in info or use <br>
-                            <b> username: </b>iwannatry <br>
+                            <br> Wanna give it a try? Create your own log in info or use
+                            <b> username: </b>iwannatry
                             <b>password: </b>
                             portfolio </p>
                     </div>
-                    <div class="card-footer">
-                            <a id="links" target="_blank" href="https://flshbones.github.io/TeamDisruptive/">View Project</a> |
-                            <a id="links" target="_blank" href="https://github.com/FlSHBONES/TeamDisruptive">GitHub Repository</a>
-                      </div>
-                  </div>
-            <div class="card">
-              <img class="card-img-top" src="images/bamazon.png" alt="Bamazon image cap">
-              <div class="card-body">
-                <h5 class="card-title">Bamazon</h5>
-                <h6 class="card-text">October, 2018</h6>
-                <p class="card-text">   <b>Bamazon is an Amazon-like storefront application!</b> This is a Javascript application that uses MySQL to maintain a storefront database.
-                    <br>
-                    <br> Bamazon has three parts: Bamazon Customer, Bamazon Manager, and Bamazon Supervisor. 
-                    <br>
-                    <br> <b> Technologies Used: </b> JavaScript, MySQL, Node.js <br>
-                    <br> Please view the GitHub repository to view the full code and documentation.</p>
-              </div>
-              <div class="card-footer">
-                    <a id="links" target="_blank" href="https://github.com/brookeemily/bamazon-app">GitHub Repository</a>
+                    <div class="card-action">
+                        <a id="links" target="_blank" href="https://flshbones.github.io/TeamDisruptive/">VIEW</a>
+                        <a id="links" target="_blank" href="https://github.com/FlSHBONES/TeamDisruptive">GitHub Repository</a>
+
+                    </div>
                 </div>
             </div>
-
-        <div class="card">
-              <img class="card-img-top" src="images/liri.jpg" alt="LIRI image cap">
-              <div class="card-body">
-                <h5 class="card-title">LIRI</h5>
-                <h6 class="card-text">October, 2018</h6>
-                <p class="card-text">  
-                        <b>LIRI is like iPhone's SIRI!</b> LIRI is a Language Interpretation and Recognition Interface. LIRI is a command line node app that takes in parameters and gives you back data.
+            <div class="row"></div>
+            <div class="col s12 cards-container">
+                    <div class="card">
+                    <div class="card-image">
+                        <img src="images/portfolio-images/train-2.jpg">
+                    </div>
+                    <div class="card-content">
+                        <h5> Train Time Schedule </h5>
+                        <h6>September, 2018</h6>
                         <br>
-                        <br> LIRI pulls data from the OMDB, Bands in Town, and Spotify APIs based on user input.
-                        <br>
-                        <br> <b> Technologies Used: </b> JavaScript, MySQL, Node.js <br>
-
-                        <br> Please view the GitHub repository to view the full code and documentation.
-              </div>
-              <div class="card-footer">
-                    <a id="links" target="_blank" href="https://github.com/brookeemily//liri-node-app">GitHub Repository</a>
+                        <p>
+                            <b>Choo Choo! This is a totally imaginary train schedule! </b> This is an application that calculates
+                            train times based on stored information from previous users.
+                            <br>
+                            <br> Every time a user adds a train to the schedule its information is stored to a Firebase database.
+                            Using the user data and Moment.js, the application returns the current train schedule.
+                            <br>
+                            <br> Check it out and add your own train to the schedule!
+                            <br>
+                            <br>
+                            <b> NOTE: others will see what you submit, please keep it clean and SFW, or at least not offensive</b>
+                    </div>
+                    <div class="card-action">
+                        <a id="links" target="_blank" href="https://brookeemily.github.io/train-time-app/">VIEW</a>
+                        <a id="links" target="_blank" href="https://github.com/brookeemily/train-time-app">GitHub Repository</a>
+                    </div>
                 </div>
+            </div>
+            <div class="row">
+            <div class="col s6 cards-container">
+                    <div class="card">
+                <div class="card-image">
+                    <img src="images/portfolio-images/gifs.jpg">
+                </div>
+                <div class="card-content">
+                    <h5> RuPaul's Drag Race Gif Library </h5>
+                    <h6>September, 2018</h6>
+                    <br>
+                    <p>
+                        <b>Everyone knows drag queens have the best gifs!</b> That's why I built this RuPaul's Drag Race
+                        gif library!
+                        <br>
+                        <br>
+                        Select a listed drag queen or search for your favorite drag superstar to get started. Once you pick a queen the application uses the Giphy API to find gifs for your viewing pleasure.
+                        <br>
+                        <br> Start your engines and may the best woman win!
+                        <br>
+                        <br>
+                        <b> NOTE: content is pulled from Giphy and may be NSFW</b>
+                </div>
+                <div class="card-action">
+                    <a  id="links" target="_blank" href="https://brookeemily.github.io/gifs-with-giphy/">VIEW</a>
+                    <a  id="links" target="_blank" href="https://github.com/brookeemily/gifs-with-giphy">GitHub Repository</a>
+                </div>
+            </div>
         </div>
-
-                  <div class="card">
-                        <img class="card-img-top" src="images/portfolio-images/train-2.jpg" alt="Train Time image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Train Time Schedule</h5>
-                          <h6 class="card-text">September, 2018</h6>
-                          <p class="card-text">  
-                                <b>Choo Choo! This is a totally imaginary train schedule! </b> This is an application that calculates
-                                train times based on stored information from previous users.
-                                <br>
-                                <br> Every time a user adds a train to the schedule its information is stored to a Firebase database.
-                                Using the user data and Moment.js, the application returns the current train schedule.
-                                <br>
-                                <br>
-                                <b>Technologies Used: </b> HTML, CSS, Bootstrap, JavaScript, Moment.js, Firebase
-                                <br>
-                                <br> Please view the deployed project and GitHub repository to view the full code and documentation.
-
-
-                        </div>
-                        <div class="card-footer">
-                                <a id="links" target="_blank" href="https://brookeemily.github.io/train-time-app/">View Project</a> |
-                                <a id="links" target="_blank" href="https://github.com/brookeemily/train-time-app">GitHub Repository</a>
-                          </div>
-                      </div>
-
-
-                  <div class="card">
-                        <img class="card-img-top" src="images/portfolio-images/gifs.jpg" alt="RuPaul's Drag Race Gif Library image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">RuPaul's Drag Race Gif Library</h5>
-                          <h6 class="card-text">September, 2018</h6>
-                          <p class="card-text">  
-                                <b>Everyone knows drag queens have the best gifs!</b> That's why I built this RuPaul's Drag Race
-                                gif library!
-                                <br>
-                                <br>
-                                Select a listed drag queen or search for your favorite drag superstar to get started. Once you pick a queen the application uses the Giphy API to find gifs for your viewing pleasure.
-                                <br>
-                                <br> Start your engines and may the best woman win!
-                                <br>
-                                <b>Technologies Used: </b> HTML, CSS, Bootstrap, JavaScript, Moment.js, Firebase
-                                <br>
-                                <br> Please view the deployed project and GitHub repository to view the full code
-                                <b> NOTE: content is pulled from Giphy and may be NSFW</b>
-                        </div>
-                        <div class="card-footer">
-                                <a id="links" target="_blank" href="https://brookeemily.github.io/gifs-with-giphy/">View Project</a> |
-                                <a  id="links" target="_blank" href="https://github.com/brookeemily/gifs-with-giphy">GitHub Repository</a>
-                          </div>
-                      </div>
-
-                      <div class="card">
-                            <img class="card-img-top" src="images/portfolio-images/fall-out-boy.jpg" alt="Fall Out Boy image cap">
-                            <div class="card-body">
-                              <h5 class="card-title">What The F*CK Is Patrick Stump Saying?</h5>
-                              <h6 class="card-text">August, 2018</h6>
-                              <p class="card-text">  
-                                    <b>You can take the girl out of Myspace, but you can't take the Myspace out of the girl.</b> I have to be honest, 2000s emo was the peak of all music.
-                                    <br>
-                                    <br>
-                                    The only problem is that it's 2018 and a lot of us still have NO idea what words were actually coming out of Patrick Stump's mouth as he tore our hearts apart. 
-                                    <br>
-                                    <br>
-                                    <b>Technologies Used: </b> HTML, CSS, Bootstrap, JavaScript, jQuery
-                                    <br>
-                                    <br> Wanna see how well you know Fall Out Boy? Please view the deployed project and GitHub repository to view the full code
-                            </div>
-                            <div class="card-footer">
-                                    <a id="links" target="_blank" href="https://brookeemily.github.io/trivia-game/">View Project</a> |
-                                    <a id="links" target="_blank" href="https://github.com/brookeemily/trivia-game">GitHub Repository</a>                              
-                          </div>
+ 
+        <div class="col s6 cards-container">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/portfolio-images/fall-out-boy.jpg">
+                    </div>
+                    <div class="card-content">
+                        <h5> What The F*CK Is Patrick Stump Saying?</h5>
+                        <h6>August, 2018</h6>
+                        <br>
+                        <p>
+                            <b>You can take the girl out of Myspace, but you can't take the Myspace out of the girl.</b> I have to be honest, 2000s emo was the peak of all music.
+                            <br>
+                            <br>
+                            The only problem is that it's 2018 and a lot of us still have NO idea what words were actually coming out of Patrick Stump's mouth as he tore our hearts apart. 
+                            <br>
+                            <br> Wanna see how well you know Fall Out Boy? Check out this trivia game I built using Javascript and jQuery.
+                            <br>
+                            <br>
+                           
+                    </div>
+                    <div class="card-action">
+                        <a id="links" target="_blank" href="https://brookeemily.github.io/trivia-game/">VIEW</a>
+                        <a id="links" target="_blank" href="https://github.com/brookeemily/trivia-game">GitHub Repository</a>
+                    </div>
+                </div>
+            </div>
+            </div>
     </div>
-</div>
+    </div>
+   
+
+
+    <div id="mainMenu">
+        <ul>
+            <li>
+                <a class="link" href="index.html">HOME</a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <a class="link" href="portfolio.html">PORTFOLIO</a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <a class="link" href="about.html">ABOUT</a>
+                <div class="line"></div>
+            </li>
+        </ul>
+    </div>
 
 
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="assets/javascript/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/css/materialize/js/materialize.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"> </script>
 
 
 </body>
