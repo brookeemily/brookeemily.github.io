@@ -97,7 +97,8 @@ color: rgb(207, 190, 190);
 
 #MainMenu{
   height: 100vh;
-  max-width: 300px;
+width: 300px;
+
   /* background-color: rgb(27, 4, 34);
   background-color: rgb(39, 24, 44);
   background-color: rgb(16, 3, 24); */
